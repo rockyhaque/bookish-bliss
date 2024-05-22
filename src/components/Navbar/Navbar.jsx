@@ -2,8 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="">
-      <div className="navbar bg-base-100 fixed z-10 font-work-sans">
+      <div className="navbar bg-base-100 fixed z-10 font-work-sans ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -115,11 +114,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-5">
-          <a className="btn bg-customGreen">Sign In</a>
-          <a className="btn btn-info">Sign Up</a>
+          <a className="btn bg-customGreen btn-sm md:btn-md lg:btn-md">Sign In</a>
+          <a className="btn bg-sky-400 btn-sm md:btn-md lg:btn-md">Sign Up</a>
         </div>
       </div>
-    </div>
   );
 };
 

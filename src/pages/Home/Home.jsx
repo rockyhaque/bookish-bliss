@@ -1,13 +1,10 @@
-import Navbar from "../../components/Navbar/Navbar";
-
+import Hero from "../../components/Hero/Hero";
 
 const Home = () => {
     return (
         <div>
-            <div className="h-20">
-                <Navbar></Navbar>
-            </div>
-            <h1>Home page</h1>
+            <Hero></Hero>
+            
             
         </div>
     );

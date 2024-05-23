@@ -12,12 +12,22 @@ const ListedBooks = () => {
 
   const [tabIndex, setTabIndex] = useState(0);
 
-
   return (
     <div>
-      <h2 className="text-3xl font-extrabold font-work-sans text-center mt-16 mb-10 bg-gray-100 py-2 rounded-xl">
+      <h2 className="text-3xl font-extrabold font-work-sans text-center mt-6 mb-10 bg-gray-100 py-2 rounded-xl">
         Books
       </h2>
+
+      <div className="flex justify-center items-center mb-10">
+        <select className="select max-w-xs bg-customGreen font-semibold font-work-sans text-lg text-white">
+          <option disabled selected>
+          Sort By
+          </option>
+          <option>Rating</option>
+          <option>Number of pages</option>
+          <option>Publisher year</option>
+        </select>
+      </div>
 
       <div className="flex items-center overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap  dark:text-gray-800">
         <Link

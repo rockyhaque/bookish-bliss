@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
-import { saveReadBook, saveWishListBook } from "../../utilities/utilities";
+import { getReadBooks, saveReadBook, saveWishListBook } from "../../utilities/utilities";
+import toast from "react-hot-toast";
 
 const Book = () => {
   const book = useLoaderData();
@@ -13,9 +14,20 @@ const Book = () => {
       console.log(book);
     }
 
+    // const handleWishlist = (wishBook) => {
+    //   saveWishListBook(wishBook)
+    //   console.log(wishBook);
+    // }
+
     const handleWishlist = (wishBook) => {
-      saveWishListBook(wishBook)
-      console.log(wishBook);
+      const readBooks = getReadBooks();
+      const isAlreadyRead = readBooks.find((book) => book.id === wishBook.id);
+      if (isAlreadyRead) {
+        toast.error('This book is already in your Read list!');
+      } else {
+        saveWishListBook(wishBook);
+        console.log(wishBook);
+      }
     }
 
 

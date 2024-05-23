@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -7,11 +7,11 @@ export default function ErrorPage() {
   return (
     <div id="error-page">
       <div className="min-h-[calc(100vh-68px)] flex flex-col justify-center items-center">
-        <h1>Oops!</h1>
-        <p>Sorry, an unexpected error has occurred.</p>
-        <p>
-          <i>{error.statusText || error.message}</i>
-        </p>
+      <img className="w-[800px]" src="https://i.ibb.co/nmWx8cM/404.jpg" alt="" />
+
+      <div>
+        <Link to="/" className="btn btn-info">Go Back</Link>
+      </div>
       </div>
     </div>
   );

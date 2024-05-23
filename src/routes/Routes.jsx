@@ -12,7 +12,7 @@ import WishlistBooksTab from "../components/WishlistBooksTab/WishlistBooksTab";
 
 // Define the loader for the book detail page
 const bookDetailsLoader = async ({params}) => {
-  const response = await fetch('../../public/booksData.json');
+  const response = await fetch('/booksData.json');
   const books = await response.json();
   const bookId = parseInt(params.id);
   const book = books.find(b => b.id === bookId);
@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('../../public/booksData.json')
+        loader: () => fetch('/booksData.json')
       },
       {
         path: "/book/:id",

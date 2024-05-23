@@ -7,6 +7,8 @@ import ContactUs from "../pages/ContactUs/ContactUs";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home/Home";
 import Book from "../pages/Book/Book";
+import ReadBooksTab from "../components/ReadBooksTab/ReadBooksTab";
+import WishlistBooksTab from "../components/WishlistBooksTab/WishlistBooksTab";
 
 // Define the loader for the book detail page
 const bookDetailsLoader = async ({params}) => {
@@ -40,6 +42,16 @@ export const router = createBrowserRouter([
       {
         path: "/listedBooks",
         element: <ListedBooks></ListedBooks>,
+        children: [
+          {
+            path: "",
+            element: <ReadBooksTab></ReadBooksTab>
+          },
+          {
+            path: "wishlist",
+            element: <WishlistBooksTab></WishlistBooksTab>
+          }
+        ]
       },
       {
         path: "/pagesToRead",

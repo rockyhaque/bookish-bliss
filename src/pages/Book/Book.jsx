@@ -1,11 +1,17 @@
 import { Link, useLoaderData } from "react-router-dom";
+import { saveReadBook } from "../../utilities/utilities";
 
 const Book = () => {
   const book = useLoaderData();
   console.log(book);
 
-  const { id, name, author, category, image, publisher, rating, tags, review, totalPages, yearOfPublishing,  } =
+  const { id, name, author, category, image, publisher, rating, tags, review, totalPages, yearOfPublishing } =
     book;
+
+    const handleRead = (book) => {
+      saveReadBook(book)
+      console.log(book);
+    }
 
   return (
     <div className="flex flex-col md:flex-row lg:flex-row items-center gap-20 px-5 md:px-2 lg:px-0">
@@ -55,7 +61,7 @@ const Book = () => {
         </div>
 
         <div className="space-x-5 font-bold font-work-sans">
-            <Link className="btn bg-white border-2 border-slate-300 font-bold">Read</Link>
+            <Link onClick={() => handleRead(book)} className="btn bg-white border-2 border-slate-300 font-bold">Read</Link>
             <Link className="btn bg-sky-300 border-none font-bold text-white">Wishlist</Link>
         </div>
       </div>

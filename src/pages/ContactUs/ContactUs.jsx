@@ -67,7 +67,7 @@ const ContactUs = () => {
                 placeholder="Subjects"
               ></textarea>
             </div>
-            <button className="rounded-full px-14 btn bg-customBlack hover:bg-customGreen text-neutral-100">
+            <button className="rounded-full px-14 btn bg-black hover:bg-customGreen text-neutral-100">
               Send Message
             </button>
           </div>

@@ -8,7 +8,7 @@
         "totalPages": 336,
         "rating": 4.5,
         "category": "Thriller",
-        "tags": ["Suspense", "Psychological"],
+        "tags": ["suspense", "psychological"],
         "publisher": "Celadon Books",
         "yearOfPublishing": 2019
     },
@@ -21,7 +21,7 @@
         "totalPages": 384,
         "rating": 4.8,
         "category": "Mystery",
-        "tags": ["Coming-of-age", "Literary Fiction"],
+        "tags": ["coming-of-age", "literary_fiction"],
         "publisher": "G.P. Putnam's Sons",
         "yearOfPublishing": 2018
     },
@@ -34,7 +34,7 @@
         "totalPages": 334,
         "rating": 4.7,
         "category": "Memoir",
-        "tags": ["Biography", "Inspirational"],
+        "tags": ["biography", "inspirational"],
         "publisher": "Random House",
         "yearOfPublishing": 2018
     },
@@ -47,7 +47,7 @@
         "totalPages": 448,
         "rating": 4.9,
         "category": "Memoir",
-        "tags": ["Biography", "Political"],
+        "tags": ["biography", "political"],
         "publisher": "Crown Publishing Group",
         "yearOfPublishing": 2018
     },
@@ -60,7 +60,7 @@
         "totalPages": 552,
         "rating": 4.6,
         "category": "Historical Fiction",
-        "tags": ["War", "Literary Fiction"],
+        "tags": ["war", "literary_fiction"],
         "publisher": "Knopf Books for Young Readers",
         "yearOfPublishing": 2005
     },
@@ -73,7 +73,7 @@
         "totalPages": 498,
         "rating": 4.7,
         "category": "Non-Fiction",
-        "tags": ["History", "Science"],
+        "tags": ["history", "science"],
         "publisher": "Harper",
         "yearOfPublishing": 2015
     },
@@ -86,7 +86,7 @@
         "totalPages": 328,
         "rating": 4.8,
         "category": "Dystopian",
-        "tags": ["Political", "Classic"],
+        "tags": ["political", "classic"],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
     },
@@ -99,7 +99,7 @@
         "totalPages": 281,
         "rating": 4.9,
         "category": "Classic",
-        "tags": ["Social Justice", "Historical Fiction"],
+        "tags": ["social_justice", "historical_fiction"],
         "publisher": "J.B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
@@ -112,7 +112,7 @@
         "totalPages": 180,
         "rating": 4.3,
         "category": "Classic",
-        "tags": ["Romance", "Literary Fiction"],
+        "tags": ["romance", "literary_fiction"],
         "publisher": "Charles Scribner's Sons",
         "yearOfPublishing": 1925
     }

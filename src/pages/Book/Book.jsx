@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-import { saveReadBook } from "../../utilities/utilities";
+import { saveReadBook, saveWishListBook } from "../../utilities/utilities";
 
 const Book = () => {
   const book = useLoaderData();
@@ -12,6 +12,13 @@ const Book = () => {
       saveReadBook(book)
       console.log(book);
     }
+
+    const handleWishlist = (wishBook) => {
+      saveWishListBook(wishBook)
+      console.log(wishBook);
+    }
+
+
 
   return (
     <div className="flex flex-col md:flex-row lg:flex-row items-center gap-20 px-5 md:px-2 lg:px-0">
@@ -62,7 +69,8 @@ const Book = () => {
 
         <div className="space-x-5 font-bold font-work-sans">
             <Link onClick={() => handleRead(book)} className="btn bg-white border-2 border-slate-300 font-bold">Read</Link>
-            <Link className="btn bg-sky-300 border-none font-bold text-white">Wishlist</Link>
+
+            <Link onClick={() => handleWishlist(book)} className="btn bg-sky-300 border-none font-bold text-white">Wishlist</Link>
         </div>
       </div>
     </div>
